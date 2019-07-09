@@ -1,9 +1,61 @@
+.container
+{
+	margin: 0 auto;
+ 	max-width: 1140px;
+}
+
 .hidden
 {
 	display: none;
 }
 
-img, embed, object, video
+
+
+.column
 {
-	max-width: 100%;
+	height: 200px;
+	width: 100%;
 }
+
+.column1
+{
+	background-color: pink;
+}
+
+.column2
+{
+	background-color: red;
+}
+
+.column3
+{
+	background-color: green;
+	display: none;
+}
+
+.column4
+{
+	background-color: blue;
+	display: none;
+}
+
+
+/*media query section start*/
+
+@media screen and (min-width: 641px) {
+	.column{
+		display: inline-block;
+		width: 24%;
+	}
+	.column1 {
+		background-color: blue;
+	}
+	.column2 {
+		background-color: purple;
+	}
+	.column3 {
+		background-color: grey;
+	}
+	.column4 {
+		background-color: brown;
+	}
